@@ -281,4 +281,17 @@ textarea {
   }
 
   /* Footer section ends here */
+
+  /* about section starts here */
+  .about {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .about-items {
+    flex-direction: column;
+  }
+  .section-description {
+    text-align: center;
+    padding: 10px;
+  }
 }
