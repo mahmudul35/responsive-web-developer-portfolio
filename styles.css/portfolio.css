@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Shared styles */
+.secondary-bg {
+  background-color: #fff8f3;
+}
+.primary-color {
+  color: #fd6e0a;
+}
+
+.dark-2 {
+  color: #474747;
+}
+
+.dark-3 {
+  color: #757575;
+}
+
+.btn-primary {
+  background-color: #fd6e0a;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: transparent;
+  padding: 10px 30px;
+  color: #fd6e0a;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #fd6e0a;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+.section-description {
+  font-size: 18px;
+  color: #757575;
+}
+.text-align {
+  text-align: center;
+}
+/* Header starts here */
+.header {
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+/* nav design starts here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 200px;
+}
+
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+ul > li {
+  list-style: none;
+  margin: 18px 50px;
+}
+ul > li > a {
+  text-decoration: none;
+}
+
+/* Banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 38px 0 200px;
+}
+
+.banner-subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.banner-title {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner-profile-pic {
+  max-width: 584px;
+}
+
+/* Main start here */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+main section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+/* About section start here */
+.about {
+  padding: 120px 150px;
+  text-align: center;
+  margin-top: 130px;
+  border-radius: 10px;
+}
+
+.item-description {
+  font-weight: 600;
+}
+.about-items {
+  display: flex;
+  justify-content: space-around;
+  line-height: 10px;
+}
+
+/* skills section starts here */
+
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+
+.skill {
+  max-width: 267px;
+  max-height: 377px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
+}
+.section-description {
+  padding: 0px 50px;
+}
+.skills-section-title {
+  margin-bottom: 30px;
+}
+.skills-section-description {
+  margin-bottom: 50px;
+}
+
+/* Resume section starts here */
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+
+.experience-description,
+.experience-subtitle {
+  color: #757575;
+}
+
+.experience-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-title {
+  color: #474747;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reume-column-tittle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #474747;
+}
+
+.resume hr {
+  margin: 30px 5px;
+}
+
+.resume-btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Footer section starts here */
+footer {
+  display: flex;
+  gap: 100px;
+  padding: 130px 230px;
+}
+
+.footer-column {
+  width: 50%;
+}
+.social-link {
+  display: flex;
+  gap: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  padding: 15px 12px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  margin-bottom: 24px;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* Mobile device */
+@media screen and (max-width: 576px) {
+  /* Skills section starts here */
+  .skill {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill img {
+    width: 100px;
+  }
+  /* Skills section ends here */
+}
