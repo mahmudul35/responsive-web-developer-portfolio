@@ -250,4 +250,19 @@ textarea {
     width: 100px;
   }
   /* Skills section ends here */
+
+  /* resume section starts here */
+  .resume-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .resume-btn-container {
+    margin-top: 20px;
+  }
+  /* Resume section ends here */
+  /* Main section */
+  main section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
